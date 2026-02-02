@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="Shamim.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Products - KHAN Pharmaceuticals PLC.Bangladesh</title>
+    <style>
+        .products_container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .products_header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .products_header h2 {
+            color: rgb(88, 88, 189);
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .category_filter {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .category_filter a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .category_filter a:hover, .category_filter a.active {
+            background: rgb(88, 88, 189);
+            color: white;
+        }
+        .products_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .product_card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product_card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .product_code {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .product_name {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(88, 88, 189);
+            margin-bottom: 10px;
+        }
+        .product_category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e3f2fd;
+            color: #0c5aa0;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .product_description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+        .product_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .product_price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #28a745;
+        }
+        .product_stock {
+            font-size: 12px;
+            color: #666;
+        }
+        .in_stock {
+            color: #28a745;
+        }
+        .low_stock {
+            color: #ff9800;
+        }
+        .manufacturer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="project.js"></script>
+    <div class="header_area">
+        <header class="head">
+            <a href="Project.html">KHAN Pharmaceuticals PLC.<br>Bangladesh (KHAN_Group_LTD)</a>
+        </header> 
+        <nav id="main_menu">
+            <ul>
+                <li><a href="Project.html">Home</a></li>
+                <li><a href="about.html">About us</a>
+                    <ul>
+                        <li><a href="https://khanshamim8134.github.io/Portfolio/">Founder's Profile</a></li>
+                        <li><a href="about.html#board">Board of Directors</a></li>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#milestones">Milestone of Excellence</a></li>
+                    </ul>
+                </li>
+                <li><a href="quality.html">Quality</a></li>
+                <li><a href="products.php">Products</a>
+                    <ul>
+                        <li><a href="products.php">All Products</a></li>
+                        <li><a href="products.php?category=Pain Relief">Pain Relief</a></li>
+                        <li><a href="products.php?category=Antibiotic">Antibiotics</a></li>
+                        <li><a href="products.php?category=Cardiovascular">Cardiovascular</a></li>
+                        <li><a href="products.php?category=Vitamins">Vitamins</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.google.com/maps/@23.249862,90.68544,15z">Export Market</a></li>
+                <li><a href="news.html">News & Event</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="https://khanshamim8134.github.io/Portfolio/">Contact Owner</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="content">
+        <div class="products_container">
+            <div class="products_header">
+                <h2>Our Products</h2>
+                <p>Quality medicines at affordable prices</p>
+            </div>
+
+                            <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:12px;border-radius:4px;margin-bottom:20px;color:#856404;">
+                    <strong>Notice:</strong> There was a problem loading products from the database. Table &#039;khan_pharmaceuticals.products&#039; doesn&#039;t exist                    <div style="margin-top:8px;color:#0c5aa0;">Tip: Run <code>setup_database.bat</code> or import <code>database_complete_setup.sql</code> to create the required tables.</div>
+                </div>
+            
+            <div class="category_filter">
+                <a href="products.php" class="active">All Products</a>
+                            </div>
+
+            <div class="products_grid">
+                            </div>
+
+                            <p style="text-align: center; color: #666; padding: 40px;">No products found in this category.</p>
+                    </div>
+    </section>
+
+    <div class="footer_area">
+        <div class="div0">
+            <h3>Extra Links</h3>
+            <h4>About Us</h4>
+            <h4>Contact us</h4>
+        </div>
+        <div class="div1">
+            <ul>
+                <li><a href="Project.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="quality.html">Quality</a></li>
+                <li><a href="products.php">Products</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <ul>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="news.html">News & Event</a></li>
+                <li><a href="https://khanshamim8134.github.io/Portfolio/">Contact Owner</a></li>
+            </ul>
+        </div>
+        <div class="div4">
+            <p>KHAN Pharmaceuticals PLC. is one of the top 10 <br>pharmaceutical companies in Bangladesh.The company<br> started its journey in 2025 with the honest promise<br> to provide quality medicines at affordable prices<br>to the countrymen.</p>
+        </div>
+        <div class="div5">
+            <ul>
+                <b><address>Address, Phone, E-mail, Social Media:</address></b>
+                <li class="address" style="color:#fff">Kashipur matpara, Jibannagar, Chuadanga,Khulna,Bangladesh.</li>
+                <li class="phone" style="color:#fff">Mob: 01723355140</li>
+                <li class="email" style="color:#fff">E-mail: khanshamim8134@gmail.com</li>
+                <li>Social Media: <a href="https://www.facebook.com/shamimkhan1981">facebook</a></li>
+            </ul>
+        </div>
+        <div class="div3">
+            <ul>
+                <li><a href="">© 2025. KHAN Pharmaceuticals PLC. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

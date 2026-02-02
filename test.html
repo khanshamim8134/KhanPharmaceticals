@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHAN Pharmaceuticals PLC. Bangladesh</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Shamim.jpg">
+
+    <style>
+        /* ===============================
+           GENERAL STYLING
+        ================================ */
+        body{
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin:0;
+            padding:0;
+            background: #fefefe;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ===============================
+           HEADER & FOOTER
+        ================================ */
+        .header_area, .footer_area{
+            background: black;
+            color: white;
+            margin: 0px;
+            padding: 20px 30px;
+            z-index: 9;
+        }
+        .head{
+            text-align: left;
+            padding: 15px 20px;
+            font-family: "Outfit", sans-serif;
+        }
+        .head a{
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(100, 203, 203);
+            text-decoration: none;
+            animation-name: hd;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes hd{
+            0%{ color: rgb(113, 249, 204); }
+            25%{ color: rgb(47, 175, 255); }
+            50%{ color: rgb(44, 44, 232); }
+            75%{ color: blueviolet; }
+            100%{ color: yellowgreen; }
+        }
+
+        /* ===============================
+           NAVIGATION MENU
+        ================================ */
+        #main_menu {
+            background: #000;
+            border-bottom: 2px solid #292146;
+        }
+        #main_menu ul {
+            display: flex;
+            justify-content: right;
+            margin-right: 60px;
+            gap: 25px;
+            list-style: none;
+            padding: 12px 0;
+        }
+        #main_menu ul li {
+            position: relative;
+        }
+        #main_menu ul li a {
+            color: white;
+            font-size: 21px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        #main_menu ul li a:hover {
+            color: blueviolet;
+        }
+        /* Dropdown submenu */
+        #main_menu ul li ul {
+            position: absolute;
+            top: 26px;
+            background: rgb(64, 156, 243);
+            border: 1px solid #070807;
+            display: none;
+            list-style: none;
+            padding: 10px 0;
+            min-width: 180px;
+            z-index: 100;
+        }
+        #main_menu ul li:hover ul {
+            display: block;
+        }
+        #main_menu ul li ul li {
+            display: block;
+            padding: 8px 15px;
+            border-bottom: 1px solid rgb(10, 10, 10);
+        }
+        #main_menu ul li ul li a:hover{
+            color: rgb(8, 5, 1);
+        }
+
+        /* ===============================
+           CONTENT LAYOUT
+        ================================ */
+        #content{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+        .main_content{
+            flex: 3;
+            font-size: 18px;
+            font-family: sans-serif;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+        .main_content h2{
+            font-size: 22px;
+            color: rgb(88, 88, 189);
+        }
+        .main_sidebar{
+            flex: 1;
+        }
+
+        /* ===============================
+           PRODUCTS SECTION
+        ================================ */
+        .product_grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .product_item {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+        }
+        .product_item img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product_item h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+            color: #2c2c88;
+        }
+        .product_item p {
+            font-size: 16px;
+            color: #333;
+        }
+        .product_item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: rgb(100, 203, 203);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product_item a:hover {
+            background: blueviolet;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ===============================
+           FOOTER STYLING
+        ================================ */
+        .footer_area ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer_area h3,h4{
+           margin: 50px 40px;
+           margin-right: 350px;
+           font-size: 23px;
+           display: inline-block;
+        }
+        .footer_area .div1,.footer_area .div2,.footer_area .div4,.footer_area .div5{
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footer_area .div1 a:hover,.footer_area .div2 a:hover,.footer_area .div5 li a:hover{
+            color: blueviolet;
+        }
+
+        /* ===============================
+           RESPONSIVE
+        ================================ */
+        @media screen and (max-width: 1200px) {
+            #content {
+                flex-direction: column;
+            }
+            .main_content, .main_sidebar {
+                width: 100%;
+                border-right: none;
+            }
+            .product_grid {
+                justify-content: center;
+            }
+            .product_item img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header_area">
+        <header class="head">
+            <a href="">KHAN Pharmaceuticals PLC.<br>Bangladesh (KHAN_Group_LTD)</a>
+        </header> 
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a>
+                    <ul>
+                        <li><a href="#">Founder's Profile</a></li>
+                        <li><a href="#">Board of Directors</a></li>
+                        <li><a href="#">Mission & Vision</a></li>
+                        <li><a href="#">Milestone of Excellence</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li><a href="#all_products">All Products</a></li>
+                        <li><a href="#pharma_products">Pharma Products</a></li>
+                        <li><a href="#herbal_products">Herbal Products</a></li>
+                        <li><a href="#oncology_products">Oncology Products</a></li>
+                        <li><a href="#ophtha_products">Ophtha Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Export Market</a></li>
+                <li><a href="#">News & Event</a>
+                    <ul>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Medical Periodicals</a></li>
+                        <li><a href="#">Latest Medical Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact Owner</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section id="content">
+        <div class="main_content">
+            <h2>Welcome to KHAN Pharmaceuticals PLC. Bangladesh</h2>
+            <p>
+                KHAN Pharmaceuticals PLC. incorporated as a limited company in 2025, received its regulatory approval in October 2025
+                to operate as a pharmaceutical company to manufacture and market medicine in Bangladesh. 
+                The company has been built on the pillars of integrity, knowledge, respect and trust. 
+                We operate at high ethical standards and are committed towards building the organization on the foundation of our vision, mission and philosophy.
+            </p>
+        </div>
+        <aside class="main_sidebar">
+            <img src="phar.jpg" alt="Pharmaceuticals Image">
+        </aside>
+    </section>
+
+    <!-- ===============================
+       PRODUCTS SECTION
+    ================================ -->
+
+    <!-- ALL PRODUCTS -->
+    <section id="all_products">
+        <h2>Our Products</h2>
+        <div class="product_grid">
+            <div class="product_item">
+                <img src="images/pharma_sample.jpg" alt="Pharma Product">
+                <h3>Pharma Products</h3>
+                <p>High-quality generic medicines for various therapeutic areas.</p>
+                <a href="#pharma_products">View Products</a>
+            </div>
+            <div class="product_item">
+                <img src="images/herbal_sample.jpg" alt="Herbal Product">
+                <h3>Herbal Products</h3>
+                <p>Natural and herbal formulations for wellness and health.</p>
+                <a href="#herbal_products">View Products</a>
+            </div>
+            <div class="product_item">
+                <img src="images/oncology_sample.jpg" alt="Oncology Product">
+                <h3>Oncology Products</h3>
+                <p>Effective medicines to support cancer treatments.</p>
+                <a href="#oncology_products">View Products</a>
+            </div>
+            <div class="product_item">
+                <img src="images/ophtha_sample.jpg" alt="Ophthalmology Product">
+                <h3>Ophthalmology Products</h3>
+                <p>Eye care medicines to ensure healthy vision.</p>
+                <a href="#ophtha_products">View Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHARMA PRODUCTS -->
+    <section id="pharma_products">
+        <h2>Pharma Products</h2>
+        <div class="product_grid">
+            <div class="product_item">
+                <img src="images/medicine1.jpg" alt="Paracetamol 500mg">
+                <h3>Paracetamol 500mg</h3>
+                <p>Used to relieve mild to moderate pain and reduce fever.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/medicine2.jpg" alt="Amoxicillin 250mg">
+                <h3>Amoxicillin 250mg</h3>
+                <p>Antibiotic for treating bacterial infections.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/medicine3.jpg" alt="Omeprazole 20mg">
+                <h3>Omeprazole 20mg</h3>
+                <p>Used to treat acid reflux and stomach ulcers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERBAL PRODUCTS -->
+    <section id="herbal_products">
+        <h2>Herbal Products</h2>
+        <div class="product_grid">
+            <div class="product_item">
+                <img src="images/herbal1.jpg" alt="Tulsi Capsules">
+                <h3>Tulsi Capsules</h3>
+                <p>Boosts immunity and improves respiratory health.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/herbal2.jpg" alt="Aloe Vera Gel">
+                <h3>Aloe Vera Gel</h3>
+                <p>Soothes skin irritation and promotes skin healing.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/herbal3.jpg" alt="Ashwagandha Powder">
+                <h3>Ashwagandha Powder</h3>
+                <p>Reduces stress and enhances overall vitality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ONCOLOGY PRODUCTS -->
+    <section id="oncology_products">
+        <h2>Oncology Products</h2>
+        <div class="product_grid">
+            <div class="product_item">
+                <img src="images/oncology1.jpg" alt="Doxorubicin">
+                <h3>Doxorubicin</h3>
+                <p>Used in chemotherapy for treating various cancers.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/oncology2.jpg" alt="Cisplatin">
+                <h3>Cisplatin</h3>
+                <p>Effective for testicular, ovarian, and lung cancers.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/oncology3.jpg" alt="Paclitaxel">
+                <h3>Paclitaxel</h3>
+                <p>Used for breast, ovarian, and lung cancer treatments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPHTHALMOLOGY PRODUCTS -->
+    <section id="ophtha_products">
+        <h2>Ophthalmology Products</h2>
+        <div class="product_grid">
+            <div class="product_item">
+                <img src="images/ophtha1.jpg" alt="Eye Drops A">
+                <h3>Eye Drops A</h3>
+                <p>Relieves dryness and irritation in the eyes.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/ophtha2.jpg" alt="Eye Drops B">
+                <h3>Eye Drops B</h3>
+                <p>Reduces redness and supports eye health.</p>
+            </div>
+            <div class="product_item">
+                <img src="images/ophtha3.jpg" alt="Lubricant Eye Gel">
+                <h3>Lubricant Eye Gel</h3>
+                <p>Keeps eyes moisturized and comfortable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer_area">
+        <div class="div0">
+            <h3>Extra Links</h3>
+            <h4>About Us</h4>
+            <h4>Contact us</h4>
+        </div>
+        <div class="div1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Export Market</a></li>
+                <li><a href="#">News & Event</a></li>
+                <li><a href="#">Contact Owner</a></li>
+            </ul>
+        </div>
+        <div class="div4">
+            <p>KHAN Pharmaceuticals PLC. is one of the top 10 pharmaceutical companies in Bangladesh.
+               The company started its journey in 2025 with the honest promise to provide quality medicines at affordable prices.</p>
+        </div>
+        <div class="div5">
+            <ul>
+                <b><address>Address, Phone, E-mail, Social Media:</address></b>
+                <li class="address">Kashipur matpara, Jibannagar, Chuadanga, Khulna, Bangladesh.</li>
+                <li class="phone">Mob: 01723355140</li>
+                <li class="email">E-mail: khanshamim8134@gmail.com</li>
+                <li>Social Media: <a href="https://www.facebook.com/shamimkhan1981">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="div3">
+            <ul>
+                <li><a href="#">© 2025. KHAN Pharmaceuticals PLC. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

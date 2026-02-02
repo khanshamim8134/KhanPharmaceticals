@@ -1,0 +1,172 @@
+.header_area,.footer_area{
+    background: black;
+    margin: 0px 0px;
+    padding: 20px 30px;
+    color: white;
+    z-index: 9;
+}
+.footer_area ul li a{
+    text-decoration: none;
+    color: white;
+}
+.div1,.div2{
+    display: inline-block;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div3{
+    font-size: 20px;
+    padding-right: 0px;
+}
+.div4{
+    display: inline-block;
+    margin: 20px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+}
+.div5{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div5 li a:hover{
+    color:blueviolet;
+}
+
+.footer_area h3,h4{
+   margin: 50px 40px;
+   margin-right: 350px;
+   font-size: 23px;
+   display: inline-block;
+}
+.div1 a:hover,.div2 a:hover{
+    color: rgb(228, 80, 11);
+}
+.head{
+    text-align: left;
+    padding: 15px 20px;
+    /*font-family: 'Tangerine', serif;*/
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+}
+.head a{
+        font-weight: bold;
+        font-size: 25px;
+        color: rgb(100, 203, 203);
+        text-decoration: none;
+        animation-name: hd;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+@keyframes hd{
+    0%{
+        color: rgb(113, 249, 204);
+    }
+    25%{
+        color: rgb(47, 175, 255);
+    }
+    50%{
+        color: rgb(44, 44, 232);
+    }
+    75%{
+        color: blueviolet;
+    }
+    100%{
+        color: yellowgreen;
+    }
+}
+
+/* ===============================
+   NAVIGATION MENU
+================================ */
+#main_menu {
+    background: #000;
+    border-bottom: 2px solid #292146;
+}
+
+#main_menu ul {
+    display: flex;
+    justify-content: right;
+    margin-right: 60px;
+    gap: 25px;
+    list-style: none;
+    padding: 12px 0;
+}
+
+#main_menu ul li {
+    position: relative;
+}
+
+#main_menu ul li a {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#main_menu ul li a:hover {
+    color: blueviolet;
+}
+
+/* Dropdown submenu */
+#main_menu ul li ul {
+    position: absolute;
+    top: 26px;
+    background: rgb(64, 156, 243);
+    border: 1px solid #070807;
+    display: none;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 100;
+}
+
+#main_menu ul li:hover ul {
+    display: block;
+}
+
+#main_menu ul li ul li {
+    display: block;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+#main_menu ul li ul li a:hover{
+    color: rgb(8, 5, 1);
+    
+}
+
+#content{
+    width: 1650px;
+    margin: 10px auto;
+}
+.main_content{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 20px 20px;
+    width: 70%;
+    border-right: 1px solid #ddd;
+    float:left;
+}
+.main_content h2{
+    font-size: 22px;
+    color:rgb(88, 88, 189);
+}
+.main_sidebar{
+    width: 25%;
+    float:right;
+}
+img{
+    width:400px;
+    height: 530px;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+

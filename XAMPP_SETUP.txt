@@ -1,0 +1,82 @@
+XAMPP INSTALLATION & SETUP GUIDE
+================================
+
+STEP 1: DOWNLOAD XAMPP
+======================
+1. Open browser
+2. Go to: https://www.apachefriends.org
+3. Click "DOWNLOAD" button
+4. Choose Windows version
+5. Save the file
+
+STEP 2: INSTALL XAMPP
+=====================
+1. Run the installer you downloaded
+2. Accept the default location: C:\xampp
+3. Click NEXT through all screens
+4. At the end, click FINISH
+5. When asked "Do you want to start Control Panel?" - Click YES
+
+STEP 3: START APACHE SERVER
+============================
+1. XAMPP Control Panel will open
+2. Look for "Apache" in the list
+3. Click the START button next to Apache
+4. You should see text turn GREEN
+5. Port should show: 80 or Port shows green status
+
+STEP 4: COPY YOUR PROJECT FILES
+================================
+1. Go to your file manager
+2. Find folder: f:\Learning_HTML
+3. Cut this entire folder (Ctrl+X)
+4. Go to: C:\xampp\htdocs
+5. Paste it there (Ctrl+V)
+6. Now your folder is at: C:\xampp\htdocs\Learning_HTML
+
+STEP 5: ACCESS YOUR WEBSITE
+============================
+1. Open your browser
+2. In address bar type:
+   http://localhost/Learning_HTML/Project.html
+
+3. You should see your KHAN Pharmaceuticals website!
+
+STEP 6: ACCESS SIGN UP PAGE
+============================
+Type in browser:
+http://localhost/Learning_HTML/signup.html
+
+The sign-up should now work!
+
+================================
+QUICK REFERENCE
+================================
+
+Main Site:  http://localhost/Learning_HTML/Project.html
+Sign Up:    http://localhost/Learning_HTML/signup.html
+Setup Check: http://localhost/Learning_HTML/setup_check.html
+
+================================
+TROUBLESHOOTING
+================================
+
+Q: Apache won't start (shows red)
+A: Another program is using port 80
+   - Try changing Apache port to 8080 in XAMPP settings
+   - Or restart your computer
+
+Q: Still getting network error
+A: - Make sure Apache shows GREEN and RUNNING
+   - Check you're using http:// not file://
+   - Refresh page (Ctrl+F5)
+
+Q: Can't find XAMPP Control Panel
+A: Look in: C:\xampp\xampp-control.exe
+   Double-click it to open
+
+Q: Learning_HTML folder disappeared
+A: It's now in C:\xampp\htdocs\Learning_HTML
+   You moved it there in Step 4
+
+================================
