@@ -5,6 +5,7 @@
 
 ![image](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20122940.png)
 ![image](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20123839.png)
+![image](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20124217.png)
 ## Recent Fixes and Improvements (January 30, 2026)
 
 ### ✅ Fixed Issues
@@ -229,6 +230,7 @@ For issues, check:
 ## License
 
 © 2025 KHAN Pharmaceuticals PLC. All rights reserved.
+
 
 
 
