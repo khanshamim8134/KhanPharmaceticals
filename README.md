@@ -1,8 +1,9 @@
 # KHAN Pharmaceuticals PLC - Project Documentation
 
 ## Project Overview
-This is a pharmaceutical company website with user authentication system built with HTML, CSS, JavaScript, and PHP.
-![image](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20122552.png)
+## This is a pharmaceutical company website with user authentication system built with HTML, CSS, JavaScript, and PHP.
+
+![image](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20122552.png](https://github.com/khanshamim8134/KhanPharmaceticals/blob/main/Screenshot%202026-02-02%20122940.png))
 ## Recent Fixes and Improvements (January 30, 2026)
 
 ### ✅ Fixed Issues
@@ -227,4 +228,5 @@ For issues, check:
 ## License
 
 © 2025 KHAN Pharmaceuticals PLC. All rights reserved.
+
 
